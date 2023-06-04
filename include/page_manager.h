@@ -6,6 +6,13 @@ typedef struct PageAction
 	char *name;
 	void (*Run)(void *pParams);
 	struct PageAction *ptNext;
-}PageAction, *PPageAction
+}PageAction, *PPageAction;
+
+
+
+void PageRegister(PPageAction ptPageAction);
+void PagesRegister(void);
+PPageAction Page(char *name);
+void MainPageRegister(void);
 
 #endif
