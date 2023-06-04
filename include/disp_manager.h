@@ -29,6 +29,8 @@ int PutPixel(int x, int y, unsigned int dwColor);
 int FlushDisplayRegion(PRegion ptRegion, PDispBuff ptDispBuff);
 PDispBuff GetDisplayBuffer(void);
 void DrawFontBitMap(PFontBitMap ptFontBitMap, unsigned int dwColor);
+void DrawRegion(PRegion ptRegion, unsigned int dwColor);
+void DrawTextInRegionCentral(char *name, PRegion ptRegion, unsigned int dwColor);
 
 
 #endif
