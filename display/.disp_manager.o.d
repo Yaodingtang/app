@@ -27,4 +27,6 @@ disp_manager.o: disp_manager.c \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/types/locale_t.h \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/types/__locale_t.h \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/strings.h \
- /mnt/hgfs/linux-share/app/include/disp_manager.h
+ /mnt/hgfs/linux-share/app/include/disp_manager.h \
+ /mnt/hgfs/linux-share/app/include/common.h \
+ /mnt/hgfs/linux-share/app/include/font_manager.h

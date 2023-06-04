@@ -1,4 +1,4 @@
-framebuffer.o: framebuffer.c \
+disp_test.o: disp_test.c \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/stdc-predef.h \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/mman.h \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/features.h \
@@ -84,5 +84,4 @@ framebuffer.o: framebuffer.c \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/ioctl-types.h \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/ttydefaults.h \
  /mnt/hgfs/linux-share/app/include/disp_manager.h \
- /mnt/hgfs/linux-share/app/include/common.h \
- /mnt/hgfs/linux-share/app/include/font_manager.h
+ /mnt/hgfs/linux-share/app/include/common.h

@@ -2,6 +2,8 @@
 #define _INPUT_MANAGER_H
 
 #include <sys/time.h>
+#include "common.h"
+
 
 #ifndef NULL
 #define NULL (void *)0

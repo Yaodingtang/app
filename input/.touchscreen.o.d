@@ -32,4 +32,5 @@ touchscreen.o: touchscreen.c \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdio_lim.h \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/sys_errlist.h \
  /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdio.h \
- /mnt/hgfs/linux-share/app/include/input_manager.h
+ /mnt/hgfs/linux-share/app/include/input_manager.h \
+ /mnt/hgfs/linux-share/app/include/common.h

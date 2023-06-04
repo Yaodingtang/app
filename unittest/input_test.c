@@ -10,6 +10,8 @@
 
 #include "input_manager.h"
 
+
+#if 0
 int main(int argc, char **argv)
 {
 	InputEvent event;
@@ -50,6 +52,7 @@ int main(int argc, char **argv)
 	return 0;
 }
 
+#endif
 
 
 
