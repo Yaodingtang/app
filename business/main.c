@@ -9,22 +9,25 @@
 #include <sys/ioctl.h>
 #include <stdlib.h>
 
-#include "ui.h"
+#include "disp_manager.h"
+#include "font_manager.h"
+#include "input_manager.h"
+#include "page_manager.h"
 
-#if 0
 int main(int argc, char **argv)
 {
 
-	PDispBuff ptBuffer;
+	/* 初始化显示系统 */
+
 	int error;
-	Button tButton;
-	Region tRegion;
 
 	if (argc != 2)
 	{
-		printf("Usage: %s <font_size>\n", argv[0]);
-		return -1;
+		printf("Usage: %s <font_file>\n", argv[0]);
+		return -1; 
 	}
+
+	
 		
 	DisplayInit();
 
@@ -32,8 +35,12 @@ int main(int argc, char **argv)
 
 	InitDefaultDisplay();
 	
-	ptBuffer = GetDisplayBuffer();
-	
+
+	/* 初始化输入系统 */
+	InputInit();
+	InputDeviceInit();
+
+	/* 初始化文字系统 */
 	FontsRegister();
 	error = SelectAndInitFont("freetype", argv[1]);
 	if (error)
@@ -42,20 +49,12 @@ int main(int argc, char **argv)
 		return -1;
 	}
 
-	tRegion.iLeftUpX = 200;
-	tRegion.iLeftUpY = 200;
-	tRegion.iWidth = 300;
-	tRegion.iHeigh = 100;
+	/* 初始化页面系统 */
+	PagesRegister();
+
+	/* 运行业务系统的主页面 */
+	Page("main")->Run(NULL);
 	
-	InitButton(&tButton, "test", &tRegion, NULL, NULL);
-	tButton.OnDraw(&tButton, ptBuffer);
-	while (1)
-	{
-		tButton.OnPressed(&tButton, ptBuffer, NULL);
-		sleep(2);
-	}
 	return 0;	
 }
-
-#endif
 

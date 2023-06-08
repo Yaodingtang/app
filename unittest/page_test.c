@@ -11,11 +11,13 @@
 
 #include "page_manager.h"
 
+#if 0
 int main(int argc, char **argv)
 {
 	PagesRegister();
 	Page("main")->Run(NULL);
 	return 0;	
 }
+#endif
 
 
